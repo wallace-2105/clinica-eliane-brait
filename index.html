@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica de Fisioterapia Eliane Brait</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url(' om/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .gradient-bg {
+    background: linear-gradient(135deg, #2E8B57 0%, #1F5E3B 50%, #163F2A 100%);
+}
+
+        .logo-text {
+            background: linear-gradient(135deg, #2E8B57 0%, #2E8B57 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+
+
+
+
+        
+        .team-card {
+    border-radius: 20px;
+    transition: all .3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.08);
+}
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <img src="d:\User\Documents\clinica eliane brait\logo_elianebrait.png"alt="Logo Clínica Eliane Brait" class="h-14 w-auto">
+                <h1 class="text-2xl md:text-3xl font-bold text-gray-800">
+                    <span class="block">Clínica</span>
+                    <span class="block text-green-700">Eliane Brait</span>
+                </h1>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-gray-700">
+                <a href="#home" class="hover:text-green-700 transition">Início</a>
+                <a href="#services" class="hover:text-green-700 transition">Serviços</a>
+                <a href="#about" class="hover:text-green-700 transition">Sobre</a>
+                <a href="#contact" class="hover:text-green-700 transition">Contato</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-gray-800 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden bg-white w-full px-4 pb-4 md:hidden">
+            <div class="flex flex-col space-y-3 text-gray-700">
+                <a href="#home" class="hover:text-green-700 transition">Início</a>
+                <a href="#services" class="hover:text-green-700 transition">Serviços</a>
+                <a href="#about" class="hover:text-green-700 transition">Sobre</a>
+                <a href="#contact" class="hover:text-green-700 transition">Contato</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Aqui continua seu conteúdo normalmente... -->
+</body>
+</html>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg text-white py-20">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Cuidando da sua saúde e bem-estar</h2>
+                <p class="text-xl mb-8">Tratamentos especializados em fisioterapia para recuperação e qualidade de vida.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="https://wa.me/5511974807090" target="_blank" class="bg-white text-teal-600 hover:bg-gray-100 font-bold py-3 px-6 rounded-full flex items-center justify-center space-x-2 transition">
+                        <i class="fab fa-whatsapp text-xl"></i>
+                        <span>Agendar Consulta</span>
+                    </a>
+                    <a href="#contact" class="border-2 border-white text-white hover:bg-white hover:text-teal-600 font-bold py-3 px-6 rounded-full flex items-center justify-center space-x-2 transition">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Como chegar</span>
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="d:\User\Documents\clinica eliane brait\fisioterapia-preventiva.jpeg" alt="Fisioterapeuta atendendo paciente" class="rounded-lg shadow-2xl max-w-md w-full floating">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+ <section id="equipe" class="py-20 bg-[#F4F7F6]">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-[#2E8B57] mb-12">Nossa Equipe</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+            <!-- Team Member 1 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-md team-card transition duration-300">
+                <img src="d:\User\Documents\clinica eliane brait\WhatsApp Image 2026-02-20 at 10.17.13 (2).jpeg" alt="Claudia Barroso" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-[#1F5E3B] mb-1">Claudia Barroso</h3>
+                    <p class="text-[#2E8B57] mb-2">Fisioterapeuta</p>
+                    <p class="text-gray-600 text-sm mb-3">Formada pela UNIABC</p>
+                    <p class="text-gray-800 mb-4"><strong>24 anos de experiência</strong></p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-[#E6F4EC] text-[#1F5E3B] text-xs px-2 py-1 rounded">Acupuntura</span>
+                        <span class="bg-[#E6F4EC] text-[#1F5E3B] text-xs px-2 py-1 rounded">Fisioterapia Pélvica</span>
+                        <span class="bg-[#E6F4EC] text-[#1F5E3B] text-xs px-2 py-1 rounded">Liberação Miofascial</span>
+                        <span class="bg-[#E6F4EC] text-[#1F5E3B] text-xs px-2 py-1 rounded">Pilates</span>
+                        <span class="bg-[#E6F4EC] text-[#1F5E3B] text-xs px-2 py-1 rounded">Quiropraxia</span>
+                        <span class="bg-[#E6F4EC] text-[#1F5E3B] text-xs px-2 py-1 rounded">Terapia Manual</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-md team-card transition duration-300">
+                <img src="d:\User\Documents\clinica eliane brait\WhatsApp Image 2026-02-20 at 10.17.13 (1).jpeg" alt="Eliane Brait" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-[#1F5E3B] mb-1">Eliane Brait</h3>
+                    <p class="text-[#2E8B57] mb-2">Fisioterapeuta</p>
+                    <p class="text-gray-600 text-sm mb-3">Formada pela UNIABC</p>
+                    <p class="text-gray-800 mb-4"><strong>32 anos de experiência</strong></p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-[#E6F4EC] text-[#1F5E3B] text-xs px-2 py-1 rounded">Microfisioterapia</span>
+                        <span class="bg-[#E6F4EC] text-[#1F5E3B] text-xs px-2 py-1 rounded">Acupuntura</span>
+                        <span class="bg-[#E6F4EC] text-[#1F5E3B] text-xs px-2 py-1 rounded">Pilates</span>
+                        <span class="bg-[#E6F4EC] text-[#1F5E3B] text-xs px-2 py-1 rounded">Quiropraxia</span>
+                        <span class="bg-[#E6F4EC] text-[#1F5E3B] text-xs px-2 py-1 rounded">RPG</span>
+                        <span class="bg-[#E6F4EC] text-[#1F5E3B] text-xs px-2 py-1 rounded">Terapia Manual</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Member 3 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-md team-card transition duration-300">
+                <img src="d:\User\Documents\clinica eliane brait\WhatsApp Image 2026-02-20 at 10.17.13.jpeg" alt="Neide Alcantara" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-[#1F5E3B] mb-1">Neide Alcantara</h3>
+                    <p class="text-[#2E8B57] mb-2">Fisioterapeuta</p>
+                    <p class="text-gray-600 text-sm mb-3">Formada pela UNINOVE</p>
+                    <p class="text-gray-800 mb-4"><strong>8 anos de experiência</strong></p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-[#E6F4EC] text-[#1F5E3B] text-xs px-2 py-1 rounded">RPG</span>
+                        <span class="bg-[#E6F4EC] text-[#1F5E3B] text-xs px-2 py-1 rounded">Pilates</span>
+                        <span class="bg-[#E6F4EC] text-[#1F5E3B] text-xs px-2 py-1 rounded">Terapia Manual</span>
+                        <span class="bg-[#E6F4EC] text-[#1F5E3B] text-xs px-2 py-1 rounded">Reabilitação</span>
+                        <span class="bg-[#E6F4EC] text-[#1F5E3B] text-xs px-2 py-1 rounded">Exercícios para Escoliose</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Member 4 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-md team-card transition duration-300">
+                <img src="d:\User\Documents\clinica eliane brait\WhatsApp Image 2026-02-20 at 10.17.12.jpeg" alt="Paula Cocco" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-[#1F5E3B] mb-1">Paula Cocco</h3>
+                    <p class="text-[#2E8B57] mb-2">Fisioterapeuta</p>
+                    <p class="text-gray-600 text-sm mb-3">Formada pela UNIABC</p>
+                    <p class="text-gray-800 mb-4"><strong>20 anos de experiência</strong></p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-[#E6F4EC] text-[#1F5E3B] text-xs px-2 py-1 rounded">Acupuntura Estética</span>
+                        <span class="bg-[#E6F4EC] text-[#1F5E3B] text-xs px-2 py-1 rounded">RPG</span>
+                        <span class="bg-[#E6F4EC] text-[#1F5E3B] text-xs px-2 py-1 rounded">Pilates</span>
+                        <span class="bg-[#E6F4EC] text-[#1F5E3B] text-xs px-2 py-1 rounded">Drenagem Linfática</span>
+                        <span class="bg-[#E6F4EC] text-[#1F5E3B] text-xs px-2 py-1 rounded">Acupuntura Sistêmica</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+ <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <img src="d:\User\Downloads\capa1_0627462222018.jfif" alt="Fisioterapeuta Eliane Brait" class="rounded-lg shadow-xl w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-800">Sobre a Clínica</h2>
+                    <p class="text-gray-600 mb-4">A Clínica de Fisioterapia Eliane Brait foi fundada com o propósito de oferecer tratamentos especializados e humanizados, visando a recuperação e melhoria da qualidade de vida dos pacientes.</p>
+                    <p class="text-gray-600 mb-6">Com mais de 20 anos de experiência, a fisioterapeuta Eliane Brait e sua equipe multidisciplinar estão comprometidos com a excelência no atendimento, utilizando técnicas atualizadas e equipamentos modernos.</p>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold mb-4 text-gray-800">Nossa Missão</h3>
+                        <p class="text-gray-600">"Proporcionar saúde, bem-estar e autonomia aos nossos pacientes através de tratamentos fisioterapêuticos personalizados e eficazes, com ética, respeito e dedicação."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-green-800 mb-12">Depoimentos</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-green-50 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-green-800 mb-4">"A Clínica Eliane Brait transformou minha vida! Após meses de dor nas costas, em poucas sessões já senti uma melhora significativa."</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Maria Silva" class="w-10 h-10 rounded-full mr-3">
+                        <div>
+                            <h4 class="font-semibold text-green-800">Maria Silva</h4>
+                            <p class="text-sm text-green-600">Paciente desde 2020</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-green-50 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-green-800 mb-4">"Profissionais extremamente capacitados e atenciosos. Recomendo a todos que precisam de tratamento fisioterapêutico."</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="João Santos" class="w-10 h-10 rounded-full mr-3">
+                        <div>
+                            <h4 class="font-semibold text-green-800">João Santos</h4>
+                            <p class="text-sm text-green-600">Paciente desde 2019</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-green-50 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="text-green-800 mb-4">"Excelente atendimento e infraestrutura. As sessões de RPG me ajudaram a corrigir minha postura e eliminar as dores."</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Ana Oliveira" class="w-10 h-10 rounded-full mr-3">
+                        <div>
+                            <h4 class="font-semibold text-green-800">Ana Oliveira</h4>
+                            <p class="text-sm text-green-600">Paciente desde 2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">Entre em Contato</h2>
+                <div class="w-20 h-1 gradient-bg mx-auto"></div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg">
+                        <h3 class="text-2xl font-bold mb-6 text-gray-800">Informações de Contato</h3>
+                        
+                        <div class="flex items-start mb-6">
+                            <div class="w-12 h-12 gradient-bg rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-map-marker-alt text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Endereço</h4>
+                                <p class="text-gray-600">Rua Conceição, 794 - Bairro Santo Antonio<br>São Caetano do Sul - SP</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start mb-6">
+                            <div class="w-12 h-12 gradient-bg rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-phone-alt text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Telefone</h4>
+                                <p class="text-gray-600">(11) 97480-7090</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start mb-6">
+                            <div class="w-12 h-12 gradient-bg rounded-full flex items-center justify-center mr-4">
+                                <i class="far fa-clock text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Horário de Funcionamento</h4>
+                                <p class="text-gray-600">Segunda a Sexta: 07:00 - 19:00</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 gradient-bg rounded-full flex items-center justify-center mr-4">
+                                <i class="far fa-envelope text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">E-mail</h4>
+                                <p class="text-gray-600">clinica_elianebrait@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h3 class="text-xl font-bold mb-4 text-gray-800">Nos siga nas redes sociais</h3>
+                        <div class="flex space-x-4">
+                            <a href="https://www.instagram.com/clinica_elianebrait" target="_blank" class="w-12 h-12 gradient-bg rounded-full flex items-center justify-center text-white hover:opacity-80 transition">
+                                <i class="fab fa-instagram text-xl"></i>
+                            </a>
+                            <a href="https://www.facebook.com/clinica_elianebrait" target="_blank" class="w-12 h-12 gradient-bg rounded-full flex items-center justify-center text-white hover:opacity-80 transition">
+                                <i class="fab fa-facebook-f text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg">
+                        <h3 class="text-2xl font-bold mb-6 text-gray-800">Agende sua consulta</h3>
+                        <form id="appointment-form" class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Nome Completo</label>
+                                <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500">
+                            </div>
+                            
+                            <div>
+                                <label for="phone" class="block text-gray-700 font-medium mb-2">Telefone</label>
+                                <input type="tel" id="phone" name="phone" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500">
+                            </div>
+                            
+                            <div>
+                                <label for="email" class="block text-gray-700 font-medium mb-2">E-mail</label>
+                                <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500">
+                            </div>
+                            
+                            <div>
+                                <label for="service" class="block text-gray-700 font-medium mb-2">Serviço de Interesse</label>
+                                <select id="service" name="service" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500">
+                                    <option value="">Selecione um serviço</option>
+                                    <option value="Fisioterapia Ortopédica">Fisioterapia Ortopédica</option>
+                                    <option value="Fisioterapia Neurológica">Fisioterapia Neurológica</option>
+                                    <option value="Fisioterapia Respiratória">Fisioterapia Respiratória</option>
+                                    <option value="Fisioterapia Pediátrica">Fisioterapia Pediátrica</option>
+                                    <option value="Pilates Clínico">Pilates Clínico</option>
+                                    <option value="Acupuntura">Acupuntura</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label for="message" class="block text-gray-700 font-medium mb-2">Mensagem</label>
+                                <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full gradient-bg text-white font-bold py-3 px-6 rounded-lg hover:opacity-90 transition flex items-center justify-center space-x-2">
+                                <i class="far fa-calendar-check"></i>
+                                <span>Enviar Agendamento</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <div class="h-96 w-full">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.112284112456!2d-46.57082392468748!3d-23.63633976419314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4370c0f5f6c9%3A0x9e8c1c6b8e8e8e8e!2sR.%20Concei%C3%A7%C3%A3o%2C%20794%20-%20Santo%20Ant%C3%B4nio%2C%20S%C3%A3o%20Caetano%20do%20Sul%20-%20SP%2C%2009571-330!5e0!3m2!1spt-BR!2sbr!4v1689876543210!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+                            <img src="d:\User\Documents\clinica eliane brait\logo_elianebrait.png"
+                             class="" style="background: linear-gradient(135deg, #52df8c 0%, #2d6e40 100%); -webkit-background-clip: text; background-clip: text; color: transparent;"></i>
+                        </div>
+                        <h3 class="text-xl font-bold logo-text">Clínica Eliane Brait</h3>
+                    </div>
+                    <p class="text-gray-400 max-w-xs">Cuidando da sua saúde e bem-estar com tratamentos especializados em fisioterapia.</p>
+                </div>
+                
+                <div class="mb-8 md:mb-0">
+                    <h4 class="text-lg font-bold mb-4">Links Rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition">Início</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition">Serviços</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition">Sobre</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="mb-8 md:mb-0">
+                    <h4 class="text-lg font-bold mb-4">Contato</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-map-marker-alt text-gray-400"></i>
+                            <span class="text-gray-400">Rua Conceição, 794 - Santo Antonio</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-phone-alt text-gray-400"></i>
+                            <span class="text-gray-400">(11) 97480-7090</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="far fa-envelope text-gray-400"></i>
+                            <span class="text-gray-400">clinica_elianebrait@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Horário de Funcionamento</h4>
+                    <p class="text-gray-400">Segunda a Sexta: 07:00 - 19:00</p>
+                    <div class="mt-4">
+                        <h5 class="font-bold mb-2">Siga-nos</h5>
+                        <div class="flex space-x-4">
+                            <a href="https://www.instagram.com/clinica_elianebrait" target="_blank" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center text-white hover:bg-teal-500 transition">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.facebook.com/elianebrait" target="_blank" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center text-white hover:bg-blue-600 transition">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://wa.me/5511974807090" target="_blank" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center text-white hover:bg-green-500 transition">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 Clínica de Fisioterapia Eliane Brait. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/5511974807090" target="_blank" class="fixed bottom-6 right-6 w-16 h-16 bg-green-500 text-white rounded-full flex items-center justify-center text-3xl shadow-lg hover:bg-green-600 transition pulse">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Form Submission
+        const appointmentForm = document.getElementById('appointment-form');
+        
+        appointmentForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const email = document.getElementById('email').value;
+            const service = document.getElementById('service').value;
+            const message = document.getElementById('message').value;
+            
+            // Create WhatsApp message
+            const whatsappMessage = `Olá, gostaria de agendar uma consulta na Clínica Eliane Brait.%0A%0A*Nome:* ${name}%0A*Telefone:* ${phone}%0A*E-mail:* ${email}%0A*Serviço de Interesse:* ${service}%0A*Mensagem:* ${message}`;
+            
+            // Open WhatsApp with pre-filled message
+            window.open(`https://wa.me/5511974807090?text=${whatsappMessage}`, '_blank');
+            
+            // Reset form
+            appointmentForm.reset();
+            
+            // Show success message
+            alert('Obrigado pelo seu agendamento! Você será redirecionado para o WhatsApp para confirmar seu horário.');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
