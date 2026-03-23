@@ -7,6 +7,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+        .equipe-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+}
         @import url(' om/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
         body {
@@ -44,6 +51,15 @@
             50% { transform: scale(1.05); }
             100% { transform: scale(1); }
         }
+        @media (max-width: 768px) {
+    .equipe-img {
+        height: 200px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}
 
 
 
@@ -60,13 +76,12 @@
     box-shadow: 0 25px 50px rgba(0,0,0,0.08);
 }
     </style>
-</head>
 <body class="bg-gray-50">
     <!-- Header -->
     <header class="bg-white shadow-lg sticky top-0 z-50">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <div class="flex items-center space-x-4">
-                <img src="d:\User\Documents\clinica eliane brait\logo_elianebrait.png"alt="Logo Clínica Eliane Brait" class="h-14 w-auto">
+                <img src="logo_elianebrait.png"alt="Logo Clínica Eliane Brait" class="h-14 w-auto">
                 <h1 class="text-2xl md:text-3xl font-bold text-gray-800">
                     <span class="block">Clínica</span>
                     <span class="block text-green-700">Eliane Brait</span>
@@ -94,12 +109,8 @@
         </div>
     </header>
 
-    <!-- Aqui continua seu conteúdo normalmente... -->
-</body>
-</html>
 
-
-    <!-- Hero Section -->
+    <!-- informações -->
     <section id="home" class="gradient-bg text-white py-20">
         <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
             <div class="md:w-1/2 mb-10 md:mb-0">
@@ -117,21 +128,21 @@
                 </div>
             </div>
             <div class="md:w-1/2 flex justify-center">
-                <img src="d:\User\Documents\clinica eliane brait\fisioterapia-preventiva.jpeg" alt="Fisioterapeuta atendendo paciente" class="rounded-lg shadow-2xl max-w-md w-full floating">
+                <img src="logo.jpeg" alt="Fisioterapeuta atendendo paciente" class="rounded-lg shadow-2xl max-w-md w-full floating">
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- time -->
  <section id="equipe" class="py-20 bg-[#F4F7F6]">
     <div class="container mx-auto px-4">
         <h2 class="text-3xl font-bold text-center text-[#2E8B57] mb-12">Nossa Equipe</h2>
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 
-            <!-- Team Member 1 -->
+            <!-- equipe -->
             <div class="bg-white rounded-lg overflow-hidden shadow-md team-card transition duration-300">
-                <img src="d:\User\Documents\clinica eliane brait\WhatsApp Image 2026-02-20 at 10.17.13 (2).jpeg" alt="Claudia Barroso" class="w-full h-64 object-cover">
+                <img src="equipe1.jpeg" alt="Claudia Barroso" class="equipe-img">
                 <div class="p-6">
                     <h3 class="text-xl font-bold text-[#1F5E3B] mb-1">Claudia Barroso</h3>
                     <p class="text-[#2E8B57] mb-2">Fisioterapeuta</p>
@@ -148,9 +159,9 @@
                 </div>
             </div>
 
-            <!-- Team Member 2 -->
+            <!-- equipe 2 -->
             <div class="bg-white rounded-lg overflow-hidden shadow-md team-card transition duration-300">
-                <img src="d:\User\Documents\clinica eliane brait\WhatsApp Image 2026-02-20 at 10.17.13 (1).jpeg" alt="Eliane Brait" class="w-full h-64 object-cover">
+                <img src="equipe2.jpeg" alt="Eliane Brait" class="equipe-img">
                 <div class="p-6">
                     <h3 class="text-xl font-bold text-[#1F5E3B] mb-1">Eliane Brait</h3>
                     <p class="text-[#2E8B57] mb-2">Fisioterapeuta</p>
@@ -167,9 +178,9 @@
                 </div>
             </div>
 
-            <!-- Team Member 3 -->
+            <!-- equipe 3 -->
             <div class="bg-white rounded-lg overflow-hidden shadow-md team-card transition duration-300">
-                <img src="d:\User\Documents\clinica eliane brait\WhatsApp Image 2026-02-20 at 10.17.13.jpeg" alt="Neide Alcantara" class="w-full h-64 object-cover">
+                <img src="equipe3.jpeg" alt="Neide Alcantara" class="equipe-img">
                 <div class="p-6">
                     <h3 class="text-xl font-bold text-[#1F5E3B] mb-1">Neide Alcantara</h3>
                     <p class="text-[#2E8B57] mb-2">Fisioterapeuta</p>
@@ -185,14 +196,14 @@
                 </div>
             </div>
 
-            <!-- Team Member 4 -->
+            <!-- equipe 4 -->
             <div class="bg-white rounded-lg overflow-hidden shadow-md team-card transition duration-300">
-                <img src="d:\User\Documents\clinica eliane brait\WhatsApp Image 2026-02-20 at 10.17.12.jpeg" alt="Paula Cocco" class="w-full h-64 object-cover">
+                <img src="equipe4.jpeg" alt="Paula Cocco" class="equipe-img">
                 <div class="p-6">
                     <h3 class="text-xl font-bold text-[#1F5E3B] mb-1">Paula Cocco</h3>
                     <p class="text-[#2E8B57] mb-2">Fisioterapeuta</p>
                     <p class="text-gray-600 text-sm mb-3">Formada pela UNIABC</p>
-                    <p class="text-gray-800 mb-4"><strong>20 anos de experiência</strong></p>
+                    <p class="text-gray-800 mb-4"><strong>20 anos de experiência</strong></p> 
                     <div class="flex flex-wrap gap-2">
                         <span class="bg-[#E6F4EC] text-[#1F5E3B] text-xs px-2 py-1 rounded">Acupuntura Estética</span>
                         <span class="bg-[#E6F4EC] text-[#1F5E3B] text-xs px-2 py-1 rounded">RPG</span>
@@ -212,7 +223,7 @@
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
-                    <img src="d:\User\Downloads\capa1_0627462222018.jfif" alt="Fisioterapeuta Eliane Brait" class="rounded-lg shadow-xl w-full">
+                    <img src="sobre.jpg" alt="Fisioterapeuta Eliane Brait" class="rounded-lg shadow-xl w-full">
                 </div>
                 <div class="md:w-1/2">
                     <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-800">Sobre a Clínica</h2>
