@@ -87,7 +87,7 @@ O endereço da clínica é exibido com um mapa incorporado do Google Maps. Ao cl
 
 ## 👤 Autor
 
-**Wallace**
+**Wallace Coimbra**
 
 - GitHub: [@wallace-2105](https://github.com/wallace-2105)
 
