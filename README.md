@@ -16,6 +16,10 @@
 ---
 
 ## 📸 Sobre o projeto
+<img width="959" height="539" alt="image" src="https://github.com/user-attachments/assets/9f9a6e42-c9d4-4395-8cd8-551cb75cfe09" />
+<img width="959" height="539" alt="image" src="https://github.com/user-attachments/assets/a42c10b8-23e0-435b-b41f-15b4458727d9" />
+
+
 
 Site institucional desenvolvido para a **Clínica Eliane Brait**, com foco em apresentar a clínica, a equipe de profissionais e facilitar o contato de novos pacientes. O projeto foi construído **inteiramente com HTML** (com CSS e JavaScript integrados), sem nenhum framework e sem back-end — uma escolha de arquitetura pensada para manter o site leve, rápido e fácil de hospedar sem custo de servidor.
 
