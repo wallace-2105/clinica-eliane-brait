@@ -1,7 +1,7 @@
 <div align="center">
 
 # 🏥 Clínica Eliane Brait
-sss
+
 
 **Site institucional para clínica de fisioterapia — front-end 100% estático, sem back-end.**
 
