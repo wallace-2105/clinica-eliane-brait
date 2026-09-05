@@ -89,7 +89,7 @@ O endereço da clínica é exibido com um mapa incorporado do Google Maps. Ao cl
 - [ ] Blog/artigos sobre fisioterapia
 - [ ] Agendamento online integrado a um calendário
 - [ ] Página individual para cada profissional da equipe
-
+- [ ] Modo noturno 
 ## 👤 Autor
 
 **Wallace Coimbra**
