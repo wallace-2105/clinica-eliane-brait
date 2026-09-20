@@ -101,5 +101,4 @@ O endereço da clínica é exibido com um mapa incorporado do Google Maps. Ao cl
 <div align="center">
 
 Se esse projeto te interessou, deixe uma ⭐ no repositório!
-melhorias em breve 
 </div>
